@@ -1,23 +1,24 @@
-A brief description of the opencv project .
+#A brief description of the opencv project .
 
-Libraries included :
-iostream - basic input/output operations
-string - for string to text conversions
-opencv - for using opencv functions
+##Libraries included :
+ - iostream - basic input/output operations
+ - string - for string to text conversions
+ - opencv - for using opencv functions
 
-<<< main() sections >>>
+##<<< main() sections >>>
 
-contains two arguments in form of count and value i.e. int main(int count , char* value)
-used for command line argument value passing (path to file and angle) .
+####contains two arguments in form of count and value i.e. int main(int count , char* value)
+####used for command line argument value passing (path to file and angle) .
+ 
+ - example : a.out ~/Downloads/guitar.jpg 90  //Rotates the picture guitar.jpg by 90 degress
+ - example : a.out ~/Downloads/ship.jpg -180  //Rotates the picture ship.jpg by -180 degress
+ - example : a.out ~/Documents/hill.jpeg 270  //Rotates the picture hill.jpeg by 270 degress
 
-example : a.out ~/Downloads/guitar.jpg 90  //Rotates the picture guitar.jpg by 90 degress
-example : a.out ~/Downloads/ship.jpg -180  //Rotates the picture ship.jpg by -180 degress
-example : a.out ~/Documents/hill.jpeg 270  //Rotates the picture hill.jpeg by 270 degress
+##int angle // contains angle to rotate the image with
 
-int angle // contains angle to rotate the image with
-string pathToFile // contains the path to the image file
+##string pathToFile // contains the path to the image file
 
-Point2f center() // a 2 dimensional floating type vector that contains 2 floating type value
+##Point2f center() // a 2 dimensional floating type vector that contains 2 floating type value
 
 img.cols & img.rows // contains the pixel values in refernce to width and height . used to calculate center coordinates here
 
